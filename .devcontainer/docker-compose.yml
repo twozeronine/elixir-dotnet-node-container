@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  elixir-dotnet-node-container:
+    image: ghcr.io/twozeronine/docker-images/dev-containers/elixir-default-con/dev:latest
+    init: true
+    privileged: true
+    command: sleep infinity
+    volumes:
+      - ..:/home/vscode/workspace:cached
